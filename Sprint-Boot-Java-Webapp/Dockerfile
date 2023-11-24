@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install bash
 WORKDIR /webapps
 
 # Copy the fat jar into the container at /app
-COPY /target/docker-java-app-example.jar /webapps/app
+COPY /target/docker-java-app-example.jar /webapps
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
