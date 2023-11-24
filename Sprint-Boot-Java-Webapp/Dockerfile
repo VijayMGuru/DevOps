@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 LABEL maintainer="VJ"
 # set shell to bash
 # source: https://stackoverflow.com/a/40944512/3128926
-RUN apt-get update && apt-get install bash
+RUN apt-get update
 
 # Set the working directory to /webapps
 WORKDIR /webapps
