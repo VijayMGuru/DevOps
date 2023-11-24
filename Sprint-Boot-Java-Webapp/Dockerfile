@@ -5,10 +5,10 @@ LABEL maintainer="VJ"
 # source: https://stackoverflow.com/a/40944512/3128926
 RUN apt-get update && apt-get install bash
 
-# Set the working directory to /app
+# Set the working directory to /webapps
 WORKDIR /webapps
 
-# Copy the fat jar into the container at /app
+# Copy the fat jar into the container at /webapps
 COPY /target/docker-java-app-example.jar /webapps
 
 # Make port 8080 available to the world outside this container
